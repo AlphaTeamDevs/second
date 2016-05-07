@@ -3,3 +3,12 @@ url = 'http://lenta.ru'
 html = urlib.urlopen(url).read()
 f = open('test.doc','w')
 f.write(html)
+
+or
+
+import urllib.request
+url = 'http://lenta.ru'
+html = urllib.request.urlopen(url).read()
+f = open('test.doc', "w", encoding='UTF-8')
+f.write(html.decode('utf-8'))
+f.close
