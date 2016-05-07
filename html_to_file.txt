@@ -1,0 +1,5 @@
+import urllib
+url = 'http://lenta.ru'
+html = urlib.urlopen(url).read()
+f = open('test.doc','w')
+f.write(html)
